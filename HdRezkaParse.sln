@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HdrezkaParalell", "HdrezkaP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{704BE9B6-8375-4358-A8C4-0B3041A9F6AF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testss", "Testss\Testss.csproj", "{F0EB6A2D-6F96-4C74-97D5-CC6B6927C974}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{704BE9B6-8375-4358-A8C4-0B3041A9F6AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{704BE9B6-8375-4358-A8C4-0B3041A9F6AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{704BE9B6-8375-4358-A8C4-0B3041A9F6AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0EB6A2D-6F96-4C74-97D5-CC6B6927C974}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0EB6A2D-6F96-4C74-97D5-CC6B6927C974}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0EB6A2D-6F96-4C74-97D5-CC6B6927C974}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0EB6A2D-6F96-4C74-97D5-CC6B6927C974}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

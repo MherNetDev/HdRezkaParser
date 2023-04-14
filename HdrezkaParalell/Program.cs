@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using static System.Net.WebRequestMethods;
+using System.Diagnostics;
 
 namespace MyApp
 {
@@ -15,7 +16,7 @@ namespace MyApp
         public static async Task Main(string[] args)
         {
             var userAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36";
-
+            Stopwatch stopwatch = new Stopwatch();
             var httpClientHandler = new HttpClientHandler();
             httpClientHandler.AllowAutoRedirect = true;
             httpClientHandler.UseCookies = true;
@@ -28,11 +29,15 @@ namespace MyApp
             //await program.MainParserForNames(url, httpClientHandler, userAgent);
 
             string someurl = Console.ReadLine();
+            stopwatch.Start();
             someurl = "https://rezka.ag/search/?do=search&subaction=search&q=" + someurl;
             //string someurl = "https://rezka.ag/animation/fantasy/56646-reyting-korolya-sunduk-hrabrosti-2023.html";
-        //    await GoToPageParser(someurl, httpClientHandler, userAgent);
+           //await GoToPageParser(someurl, httpClientHandler, userAgent);
             await program.MainParserForNames(someurl, httpClientHandler, userAgent);
+         
 
+            stopwatch.Stop();
+            Console.WriteLine($"Elapsed time: {stopwatch.ElapsedMilliseconds} ms");
 
 
         }
